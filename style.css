@@ -10,14 +10,7 @@ box-shadow: 0 0 71px blueviolet;
 .download:hover{
   box-shadow: 0 0 71px blue;
 }
-view:active{
-  color: blueviolet;
-  background-color: white;
-}
-.download:active{
-  color: blue;
-  background-color: white;
-}
+
 
 .hiddenr{
   opacity: 0;

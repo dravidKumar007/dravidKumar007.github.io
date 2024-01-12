@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script defer src="scroll.js"></script>
+<script>
+    var sel=0;
+function sele(){
+  const bar=document.getElementById("bar");
+  if(sel%2==0){
+
+bar.style.display="block";
+sel++;
+  }
+  else{
+    bar.style.display="none";
+    sel++;
+  }
+  console.log("value is "+sel);
+}
+</script>
+<script src="https://kit.fontawesome.com/5074998276.js" crossorigin="anonymous"></script>
+
+    <div class="nav">
+        <h1 class="left">Portfolio</h1>
+       
+        <h3 class="right"><a href="" class="con">Home</a> <a href="#aboutme" class="con">Aboutme</a><a href="#skills" class="con"> Skills</a><a href="#Experience" class="con"> Experience </a><a href="#foot" class="con">Contacts</a></h3>
+
+      <span class="hambar">  <span onclick="sele()"><i class="fa-sharp fa-solid fa-bars ham"></i></span><h3 class="newsel" id="bar"><a href="#start"  class="con la">Home</a><br> <a href="#aboutme" class="con la">Aboutme</a><br><a href="#skills" class="con la "> Skills</a><br><a href="#Experience" class="con la err"> Experience </a><br><a href="#foot" class="con la">Contacts</a></h3></span>
+        
+    </div>
+
+<body>
+    <div class="detail">
+        <span class="det-txt">
+            <h2 class="name">
+                <span class="hi hiddenl hidden">HI!</span><br>
+               <div class="hiddenl hidden">
+I am Dravid Kumar
+               </div> 
+            </h2>
+            <h3 class="work  hidden hiddenl">
+                I'm an Engineering Student
+            </h3>
+            <h5 class="area  hidden hiddenl">studing in Easwari Engineering College,Chennai </h5>
+        </span>
+        <span class="img">
+           <center>
+
+               <img  src="DSC_4727.jpg" alt="photo" class="photo hidden hiddenr">
+           </center>
+
+            
+        </span> 
+    </div>
+<br><br>
+<br><br>
+    <div style="display: flex;justify-content:space-around;align-items: center;">
+        <div style="display: flex;justify-content:space-between;align-items: center;">
+            <a href="Dravid kumar Resume.pdf" download="">
+
+                <button download style="margin-right: 5%; font-weight: 900; padding: 5px; background-color: blue; color: aliceblue; text-decoration: none; font-family: 'open sans bold';" class="download hidden hiddenl">Download Resume</button>
+            </a>
+
+            <button target="_blank" style="margin-left: 5%; padding: 5px; background-color: blueviolet; color: aliceblue; text-decoration: none; font-family:'open sans bold'; transition-delay: 200ms;" class="view hidden hiddenl" onclick="window.open('Dravid-kumar-Resume.html')">View Resume</button>
+            
+        </div>
+        <div></div>
+    </div>
+    <div class="about" id="aboutme">
+        <br>
+        
+        <br>
+        <center>
+
+            <h1 class="underline">About Me</h1>
+        </center>
+        <h5 style="display: flex; justify-content: space-evenly; margin-left: 2px; color: rgba(253, 253, 253, 0.635);"  class="hiddenl hidden">  My name is Dravid Kumar, and I am currently pursuing my Bachelor's degree in Computer Science Engineering at Easwari Engineering College in Ramapuram, Chennai. I completed my schooling at Valliammal Matriculation Higher Secondary School in Anna Nagar, Chennai.
+
+            As a passionate individual, I have developed a keen interest in backend development. .I find the logic and functionality behind the scenes fascinating, and I enjoy working on the server-side of web applications. Through my coursework and personal projects, I have gained a solid understanding of programming languages and concepts relevant to backend development.
+            
+            Living in Chennai has provided me with opportunities to explore the vibrant tech community and collaborate with like-minded individuals. I appreciate the city's thriving IT industry and the constant exposure to new technologies and advancements.
+              
+            Throughout my journey, I have strived to enhance my skills and knowledge in computer science. I am excited about the possibilities that lie ahead in my career, and I am eager to continue growing as a backend developer.
+            
+            In my spare time, I enjoy keeping up with the latest trends in technology and attending tech meetups and conferences. I also enjoy reading books and articles on software development to broaden my understanding of the field.
+            
+            I am looking forward to utilizing my skills and knowledge to contribute meaningfully to the world of backend development and create innovative solutions that make a positive impact.
+            
+            I am continuously seeking new challenges and opportunities to enhance my skills and broaden my horizons. I am dedicated to lifelong learning and staying up-to-date with the latest advancements in the world of technology. With a combination of theoretical knowledge and practical experience, I am ready to take on new challenges in the world of backend development.</p></div>
+        </h5>
+    </div>
+<br><br><hr><br>
+    <div id="skills">
+        <br><br>
+        <center><h1 class="skills">Skills</h1></center>
+        <br>
+        <Fieldset>
+            <legend style="font-size: 3vw;">Front End</legend>
+            <div class="" style="display: flex;flex-wrap: wrap; justify-content: space-evenly; max-width: fit-content;">
+
+                <img style="height: 15vw;  margin: 30px;
+            border: 7px solid  white;padding: 10px;box-shadow: 0 0 10px white;" class="hiddenl hidden" src="pngegg(1).png" alt="html" srcset="">
+      <img style="height: 15vw;  margin: 30px;
+      border: 7px solid  white;padding: 10px;box-shadow: 0 0 10px white;"class="hiddenl hidden td1" src="css.png" alt="css" srcset=""> 
+        <img style="height: 15vw;  margin: 30px;
+        border: 7px solid  white;padding: 10px;box-shadow: 0 0 10px white;" class="hiddenl hidden td2"src="js.png" alt="java script" srcset=""> 
+            <img style="height: 15vw;  margin: 30px;box-shadow: 0 0 10px white;
+            border: 7px solid  white;padding: 10px;"class="hiddenl hidden td3" src="react.png" alt="react" srcset="">  
+    <img src="tailwind.png" alt="tailwind"style="height: 15vw;  margin: 30px;
+    border: 7px solid  white;padding: 10px; transition-delay: 100ms; box-shadow: 0 0 10px white;" class="hiddenl hidden">  
+    </div>
+    </Fieldset>
+<br>
+<Fieldset ><legend style="font-size: 3vw;">Back End</legend>
+    <div class="" style="display: flex;justify-content: space-evenly; max-width: fit-content; ">
+
+        <img class=" white;gridimg hiddenl hidden" src="spring.png"  style="height: 15vw;  margin: 20px;
+        border: 7px solid  white;padding: 10px;box-shadow: 0 0 10px white;" alt="spring boot">
+        <img class="gridimg hiddenl hidden td1" src="pngegg.png" style="height: 15vw;  margin: 20px;
+        border: 7px solid white; box-shadow: 0 0 10px white;padding: 10px;" alt="hibernate" >
+    </div>
+    </Fieldset >
+<fieldset>
+    <legend style="font-size: 3vw;">Data Base</legend>
+    <div  style="display: flex;flex-wrap: wrap; justify-content: space-evenly; max-width: fit-content;">
+
+        <img src="mysql.png" alt="Mysql"style="box-shadow: 0 0 10px white;height: 15vw;  margin: 30px;
+    border: 7px solid  white;padding: 10px;" class="hiddenl hidden" srcset="">
+    <img src="Postgres.png"style="height: 15vw;box-shadow: 0 0 10px white;  margin: 30px;
+    border: 7px solid  white;padding: 10px;" class="hiddenl hidden td2" alt="Postgres">
+    </div>
+</fieldset>
+<fieldset>
+    <legend style="font-size: 3vw;">Other Skills</legend>
+    <img style="height: 15vw;  margin: 30px;
+    border: 7px solid  white;padding: 10px;box-shadow: 0 0 10px white;" class="hiddenl hidden" src="git.png" alt="git">
+     <img src="bash.png" style="height: 15vw;  margin: 30px;
+     border: 7px solid  white;padding: 10px;box-shadow: 0 0 10px white;" class="hiddenl hidden td1"alt="bash">
+</fieldset>
+    </div>
+    <br><br><hr><br><br>
+    <div id="Experience"  class="exp"><center>
+        <h1>Experience</h1>
+    </center>
+
+    <hr style="margin: 40px; margin-left: 170px;margin-right: 170px;">
+    <br>
+    <div style="margin: 30px; border: 1px solid white; padding: 10px;">
+
+    <div class="hidden hiddenr" style="display: flex; align-items: auto;justify-content: flex-start;">
+
+
+    <h3  >
+        Oasis infobyte </h3>
+        <p style="padding-top: 1.1vw;">  &nbsp; as intern(1 month)</p>
+        
+        
+    </div>
+    <h5 style="color: rgba(255, 255, 255, 0.692);">
+                  <div class="hiddenl hidden">
+                      ● Learned Java coding and MySQL database
+                      connection. 
+                  </div>
+                  <div class="hiddenl hidden">
+
+                      ● Acquired Git and GitHub skills
+                  </div>
+                </h5>
+            </div>
+            <div style="margin: 30px; border: 1px solid white; padding: 10px;">
+                <div class="hidden hiddenr" style="display: flex;justify-content: flex-start;">
+    
+                <h3  class="hiddenr hidden">
+                    Cissol </h3>
+                    <p style="padding-top: 1.1vw;" > &nbsp;  intern(2 months)</p>
+                </div>
+                    <h5 >
+                        
+                       <div class="hiddenl hidden">
+                            ● Mastered Spring Boot and Hibernate technologies. 
+                       </div>
+                       <div class="hiddenl hidden">
+                            ● Demonstrated skill in handling REST APIs. 
+                       </div>
+                       <div class="hiddenl hidden">
+                           ● Developed the backend for a flight ticket booking system. 
+                       </div>
+                    </h5>
+                </div>
+            </div> 
+            
+    </div>
+ <div id='Contacts'>
+<div class="message">
+  <center>
+<br>
+      <h1 style="font-family: monospace; font-weight: 400; color: aliceblue;">Message Here</h1>
+      <form  name="database">
+          <input style=" width: 300px;  background: rgb(30, 30, 30);color: aliceblue; border:3px solid rgb(28, 28, 28); border-radius: 5px;" type="text" name="Name" placeholder="Enter your name" ><br><br>
+          <input style="width: 300px;  background: rgb(30,30,30);color: aliceblue; border:3px solid rgb(28, 28, 28);border-radius: 5px;" type="email" name="Email" placeholder="Enter your email"><br><br>
+          <textarea style="width: 300px;height: 300px; background: rgb(30,30,30);color: aliceblue; border:3px solid rgb(28, 28, 28);border-radius: 5px;" name="Message" placeholder="Enter your message"></textarea><br><br>
+    <button onclick="mesbut()" style="border: 2px solid white;border-radius: 0%; background-color: white; " type="submit" name="Submit" id="messagebutton">Submit</button>
+    <br><br>
+        </form>
+        <script defer src="database.js">
+           
+          </script>
+    </center>
+
+</div>
+ </div>
+
+</body>
+<footer id="foot">
+   <div>
+<center>
+
+    <h1 style="display: block;" class="hidden hiddenr">Contacts</h1>
+    <hr style="margin: 40px;">
+ <div style="display: flex;align-items: center;justify-content: flex-start;">
+     <h3  class="hidden hiddenl "style="display: block;">Email:&emsp;</h3><h3 style="display: block;" class="l hidden hiddent">dravidkumarbdk04@outlook.com</h3>
+
+ </div>
+ <div style="display: flex;align-items: center;justify-content: flex-start;">
+
+    <h3 class="hidden hiddenl">Whatsapp:&emsp;</h3><h3 style="display: block;" class="l hidden hiddent">9940211996</h3>
+ </div>
+    <div style="background: rgba(255, 255, 255, 0.060);" class="icon"><script src="https://kit.fontawesome.com/5074998276.js" crossorigin="anonymous"></script><a href="https://www.linkedin.com/in/dravid-kumar-b-7277ba248?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BlThN%2FoMbT9GLO%2BE%2ByJ6DIQ%3D%3D"><i class="fa-brands fa-linkedin-in fa-2xl" style="color: #ffffff;"></i></a>
+        <a href="https://github.com/dravidkumar007">  <i class="fa-brands fa-github fa-2xl"></i></a>
+    </center>
+    </div>
+</div> 
+</footer>
+</html>

@@ -19,6 +19,42 @@ box-shadow: 0 0 71px blueviolet;
   transition: all 1s;
   
 }
+#imgtxt{
+  opacity: 0;  
+  color:  white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.646);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15vw;
+  border: 7px solid  white;padding: 10px;box-shadow: 0 0 10px white;
+  width: 15vw; 
+  margin: 30px;
+  text-align: center;
+  font-size: xx-large;
+}
+@keyframes imt{
+  from{
+    transform: translateY(70px);
+    opacity: 0;
+    filter: blur(10px);
+
+  }
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+#imgtxt:hover{
+  opacity: 1;
+}
+#imgtxt:hover h4{
+
+  animation: imt ease-in-out 500ms;
+}
 
 .hiddent{
   opacity: 0;
@@ -106,10 +142,10 @@ border: 2px solid whitesmoke;
   }
   .photo{
     border-radius: 45%;
-    filter: grayscale(100%);
+    filter: grayscale(80%);
     
     height: 80%;
-    width: 80%;
+    width: 60%;
     max-height: 350px;
     max-width: 350px;
     margin-left: 0; 

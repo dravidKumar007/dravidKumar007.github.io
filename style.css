@@ -10,6 +10,28 @@ box-shadow: 0 0 71px blueviolet;
 .download:hover{
   box-shadow: 0 0 71px blue;
 }
+.menu-app{
+  
+  animation:  menapp 1700ms;
+}
+.menu-rem{
+ 
+  animation: menrem  1700ms;
+  
+}
+@keyframes menapp{
+  from{transform: translateX(200px);
+  }
+  to{transform: translateX(0);}
+}
+@keyframes menrem{
+
+  to{
+  transform: translateX(200px);
+  
+}
+}
+
 
 
 .hiddenr{
@@ -284,7 +306,7 @@ text-decoration: underline;
   padding-top:21px ;
   padding-right: 15px;
    }
-   .ham:hover{
+   .ham:active{
 background-color: gold;
 color: black;
 border-radius: 50%;

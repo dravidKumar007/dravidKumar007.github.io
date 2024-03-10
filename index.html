@@ -8,16 +8,23 @@
 </head>
 <script defer src="scroll.js"></script>
 <script>
-    var sel=0;
-function sele(){
+    var sel=0; 
+ function sele(){
   const bar=document.getElementById("bar");
   if(sel%2==0){
-
-bar.style.display="block";
-sel++;
+    bar.classList.remove('menu-rem')
+    bar.style.display='block';
+      bar.classList.add('menu-app')
+      sel++;
   }
   else{
-    bar.style.display="none";
+    
+    bar.classList.remove('menu-app');
+    bar.classList.add('menu-rem')
+    setTimeout(function() {
+            bar.style.display = 'none';
+        }, 1600);
+        
     sel++;
   }
   console.log("value is "+sel);

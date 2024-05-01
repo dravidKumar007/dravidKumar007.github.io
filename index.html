@@ -6,7 +6,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <script defer src="scroll.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var links = document.querySelectorAll('.con');
+      
+      links.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+          e.preventDefault(); // Prevent default link behavior
+          var targetId = this.getAttribute('href'); // Get the target section id
+          var targetSection = document.querySelector(targetId); // Get the target section
+          targetSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to the target section smoothly
+        });
+      });
+    });
+    </script>
 <script>
     var sel=0; 
  function sele(){
@@ -35,13 +50,13 @@
     <div class="nav">
         <h1 class="left">Portfolio</h1>
        
-        <h3 class="right"><a href="" class="con">Home</a> <a href="#aboutme" class="con">Aboutme</a><a href="#skills" class="con"> Skills</a><a href="#Experience" class="con"> Experience </a><a href="#foot" class="con">Contacts</a></h3>
+        <h3 class="right"><a href="#home" class="con">Home</a> <a href="#aboutme" class="con">Aboutme</a><a href="#skills" class="con"> Skills</a><a href="#Experience" class="con"> Experience </a><a href="#foot" class="con">Contacts</a></h3>
 
       <span class="hambar">  <span onclick="sele()"><i class="fa-sharp fa-solid fa-bars ham"></i></span><h3 class="newsel" id="bar"><a href="#start"  class="con la">Home</a><br> <a href="#aboutme" class="con la">Aboutme</a><br><a href="#skills" class="con la "> Skills</a><br><a href="#Experience" class="con la err"> Experience </a><br><a href="#foot" class="con la">Contacts</a></h3></span>
         
     </div>
 
-<body>
+<body id="home">
     <div class="detail">
         <span class="det-txt">
             <h2 class="name">
@@ -67,13 +82,13 @@ I am Dravid Kumar
 <br><br>
 <br><br>
     <div style="display: flex;justify-content:space-around;align-items: center;">
-        <div style="display: flex;justify-content:space-between;align-items: center;">
+        <div style="display: flex;justify-content:space-around;align-items: center;">
             <a href="Dravid kumar Resume.pdf" download="">
 
-                <button download style="margin-right: 5%; font-weight: 900; padding: 5px; background-color: blue; color: aliceblue; text-decoration: none; font-family: 'open sans bold';" class="download hidden hiddenl">Download Resume</button>
+                <button download style="margin-right: 5%; font-weight: 900; padding: 8px; background-color: blue; color: aliceblue; text-decoration: none; font-family: 'open sans bold';border: 0; border-radius: 7px;" class="download hidden hiddenl">Download Resume</button>
             </a>
 
-            <button target="_blank" style="margin-left: 5%; padding: 5px; background-color: blueviolet; color: aliceblue; text-decoration: none; font-family:'open sans bold'; transition-delay: 200ms;" class="view hidden hiddenl" onclick="window.open('Dravid-kumar-Resume.html')">View Resume</button>
+            <button target="_blank" style="margin-left: 5%; padding: 5px; background-color: blueviolet; color: aliceblue; text-decoration: none; font-family:'open sans bold'; transition-delay: 200ms;border: 0; border-radius: 7px;" class="view hidden hiddenl" onclick="window.open('Dravid-kumar-Resume.html')">View Resume</button>
             
         </div>
         <div></div>

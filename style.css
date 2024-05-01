@@ -5,10 +5,10 @@
   transition: all 1s;
 }
 .view:hover{
-box-shadow: 0 0 71px blueviolet;
+box-shadow: 0 0 31px blueviolet;
 }
 .download:hover{
-  box-shadow: 0 0 71px blue;
+  box-shadow: 0 0 31px blue;
 }
 .menu-app{
   

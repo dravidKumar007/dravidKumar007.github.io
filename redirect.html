@@ -3,12 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Display Cryptocurrency News</title>
 </head>
 <body>
+    <h1>Cryptocurrency News</h1>
+    <div id="news-container"></div>
+
     <script>
-        console.log("ddddddd")
-    window.location.assign('https://newsdata.io/api/1/news?apikey=pub_40575a61989db416a58f959a7c691ba26454a&q=cryptocurrency')
-</script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('https://newsdata.io/api/1/news?apikey=pub_40575a61989db416a58f959a7c691ba26454a&q=cryptocurrency')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch data');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const newsContainer = document.getElementById('news-container');
+                    if (data && data.results && data.results.length > 0) {
+                        data.results.forEach(article => {
+                            const articleElement = document.createElement('div');
+                            articleElement.innerHTML = `
+                                <h2>${article.title}</h2>
+                                <img src="${article.image_url}" alt="Article Image">
+                                <p>${article.description}</p>
+                                <a href="${article.link}" target="_blank">Read more</a>
+                                <hr>
+                            `;
+                            newsContainer.appendChild(articleElement);
+                        });
+                    } else {
+                        newsContainer.textContent = 'No news found';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                    const newsContainer = document.getElementById('news-container');
+                    newsContainer.textContent = 'Failed to fetch news data';
+                });
+        });
+    </script>
 </body>
 </html>

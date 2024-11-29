@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenkins Bot - Service Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        h1 {
+            border-bottom: 2px solid #666;
+            padding-bottom: 10px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        ul {
+            margin: 10px 0;
+            padding: 0 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Service Documentation for Jenkins Bot</h1>
+
+    <div class="section">
+        <h2>1. Overview</h2>
+        <p>The Jenkins Bot is a chat-based tool that simplifies interaction with Jenkins CI/CD pipelines. It allows users to manage jobs, monitor the server, and execute common tasks directly from a chat platform.</p>
+    </div>
+
+    <div class="section">
+        <h2>2. Features</h2>
+        <ul>
+            <li>Menu-based actions for quick setup and task management.</li>
+            <li>Command-based job operations like triggering, enabling, disabling, and deleting jobs.</li>
+            <li>Allows checking the Jenkins server status.</li>
+            <li>Supports public Jenkins URLs or IPs only for enhanced accessibility and security.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. Supported Actions and Commands</h2>
+        <h3>Actions (Menu)</h3>
+        <ul>
+            <li><strong>login:</strong> Save the username and password for authentication.</li>
+            <li><strong>csrf:</strong> Save the Jenkins CSRF token required for secure actions.</li>
+            <li><strong>url:</strong> Save the public URL of your Jenkins server. Only public URLs or IPs are allowed.</li>
+            <li><strong>Status:</strong> Retrieve the current status of the Jenkins server.</li>
+            <li><strong>Job:</strong> Get details of a specific Jenkins job.</li>
+        </ul>
+
+        <h3>Commands (Chat)</h3>
+        <ul>
+            <li><strong>/trigger:</strong> Trigger a specific Jenkins job.</li>
+            <li><strong>/disable:</strong> Disable a specific Jenkins job.</li>
+            <li><strong>/enable:</strong> Enable a previously disabled job.</li>
+            <li><strong>/delete:</strong> Delete a Jenkins job.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>4. Prerequisites</h2>
+        <ul>
+            <li>Use a public Jenkins URL or IP for bot connectivity. Private/local addresses are not supported.</li>
+            <li>Install necessary Jenkins plugins, such as the REST API Plugin and CSRF Protection enabled.</li>
+            <li>Provide valid credentials, including username, password, and CSRF token.</li>
+            <li>Use the bot with a compatible chat platform like Zoho Cliq, Slack, or Microsoft Teams.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>5. Installation</h2>
+        <ul>
+            <li>Install the bot from the designated repository or package.</li>
+            <li>Configure your Jenkins server with REST API and CSRF plugins.</li>
+            <li>Use the bot's menu to save your Jenkins URL, username, password, and token.</li>
+            <li>Test connectivity and functionality using commands like <code>/trigger</code> or actions like <code>Status</code>.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>6. Security Guidelines</h2>
+        <ul>
+            <li>Use only HTTPS to secure communication between the bot and Jenkins.</li>
+            <li>Set strong passwords and rotate your CSRF tokens periodically.</li>
+            <li>Assign user roles and permissions carefully in Jenkins to limit sensitive operations.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>7. Maintenance and Troubleshooting</h2>
+        <ul>
+            <li>Ensure your Jenkins server has a valid public URL/IP.</li>
+            <li>If the CSRF token validation fails, use the <code>csrf</code> action to update the token.</li>
+            <li>Check the bot's configuration if commands fail to execute. Verify the job name, URL, or credentials.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>8. Support</h2>
+        <p>For further assistance, contact the support team:</p>
+        <ul>
+            <li><strong>Email:</strong> dravidkumardk04@gmail.com</li>
+        </ul>
+    </div>
+</body>
+</html>
